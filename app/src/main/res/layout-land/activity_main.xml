@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvInputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvOutputView"/>
+    <TextView
+        android:id="@+id/tvOutputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Output"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputView"
+        app:layout_constraintBottom_toTopOf="@+id/gridView"/>
+
+
+    <GridLayout
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:columnCount="5"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOutputView">
+
+        <Button
+            android:id="@+id/btnEnterOne"
+            android:onClick="onClickOneButton"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btnEnterFour"
+            android:onClick="onClickFourButton"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/btnEnterSeven"
+            android:onClick="onClickSevenButton"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/btnEnterDot"
+            android:onClick="onClickDotButton"
+            android:text="."/>
+
+        <Button
+            android:id="@+id/btnEnterTwo"
+            android:onClick="onClickTwoButton"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/btnEnterFive"
+            android:onClick="onClickFiveButton"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/btnEnterEight"
+            android:onClick="onClickEightButton"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/btnEnterZero"
+            android:onClick="onClickZeroButton"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/btnEnterThree"
+            android:onClick="onClickThreeButton"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/btnEnterSix"
+            android:onClick="onClickSixButton"
+            android:text="6"/>
+
+        <Button
+            android:id="@+id/btnEnterNine"
+            android:onClick="onClickNineButton"
+            android:text="9"/>
+
+        <Button
+            android:id="@+id/btnEnterEquals"
+            android:onClick="onClickEqualsButton"
+            android:text="="/>
+
+        <Button
+            android:id="@+id/btnEnterPlus"
+            android:onClick="onClickPlusButton"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/btnEnterMinus"
+            android:onClick="onClickMinusButton"
+            android:text="-"/>
+
+        <Button
+            android:id="@+id/btnEnterMultiply"
+            android:onClick="onClickMultiplyButton"
+            android:text="X"/>
+
+        <Button
+            android:id="@+id/btnEnterDivide"
+            android:onClick="onClickDivideButton"
+            android:text="/"/>
+        <Button
+            android:id="@+id/btnEnterSquareRoot"
+            android:onClick="onClickSquareRootButton"
+            android:text="√"/>
+        <Button
+            android:id="@+id/btnEnterSquare"
+            android:onClick="onClickSquareButton"
+            android:text="x^2"/>
+        <Button
+            android:id="@+id/btnEnterLog"
+            android:onClick="onClickLogButton"
+            android:text="ln(x)"/>
+        <Button
+            android:id="@+id/btnEnterLn"
+            android:onClick="onClickPowButton"
+            android:text="x^x"/>
+        <Button
+            android:id="@+id/btnClear"
+            android:onClick="onClickClear"
+            android:text="C"/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

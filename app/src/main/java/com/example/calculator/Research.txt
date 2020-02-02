@@ -1,0 +1,30 @@
+1. A View is anything being displayed on the screen. A ViewGroup is a collection of views.
+    The View Hierarchy the display of how views are related to each other.
+2. The Linear Layout is rendered by stacking all its views on top of each other in a single row.
+    The Constraint Layout is rendered based on specific margins you have given to each view. It is
+    a more flexible layout as it allows you to give margins based on other views in the layout.
+    The Coordinator Layout is used for a specific interaction with one or more child views. Each
+    view is given a Behavior or a default is given to it which can be used how it interacts with other
+    views.The Grid Layout renders its views in a grid pattern where a specific number of columns and
+    rows are given and the views are then put into each space of the grid. The Relative Layout eliminates
+    nested view groups and keeps the hierarchy flat. You have to define the position of each view
+    using layout properties.
+3. A listener is a method that is called when the user does something that the developer wants to be
+    notified of like clicking a button.
+4. Java garbage collection is an automatic collector and destroy of objects not in use or
+    unreachable. You can make a variable unreachable by nullifying the reference variable,
+    re-assigning the reference variable, or if the object is created inside method.
+5. The software development lifecycle is the Agile method which is based on an iterative development
+    process. In agile your iterative cycles are called sprints. A sprint is usually a two week period
+    where you are given tasks or stories to complete within that week. Each task is measured in the
+    amount of time it would take to complete it which are called story points. Each story point is
+    four hours of work. You are given a number of tasks that combined take up around 20 story points
+    of time. Within the sprint there are meetings to monitor and update the team on your progress.
+    Sprint planning is the first meeting and it is done usually the first day of the sprint where
+    your plan out what you are doing for that sprint like assigning stories. Each morning you have a
+    daily stand-up meeting where you meet with your team and each answer three questions; What did I
+    do yesterday, what am i doing today and what problems are in the foreseeable future. Half way
+    through the sprint you will have a grooming session where you make adjustments to the sprint to
+    make the deadline like removing stories or adjusting the amount of time it will take to do those
+    stories. The day before the sprint ends is the demo where you showcase your work and receive
+    validation for the work you made during the sprint.
